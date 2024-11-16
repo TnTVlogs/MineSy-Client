@@ -17,6 +17,9 @@ const { MicrosoftAuth, MicrosoftErrorCode } = require('helios-core/microsoft')
 const { AZURE_CLIENT_ID }    = require('./ipcconstants')
 const Lang = require('./langloader')
 
+const uuid = require('uuid')
+const crypto = require('crypto')
+
 const log = LoggerUtil.getLogger('AuthManager')
 
 // Error messages
@@ -139,28 +142,22 @@ function mojangErrorDisplayable(errorCode) {
  * @param {string} password The account password.
  * @returns {Promise.<Object>} Promise which resolves the resolved authenticated account object.
  */
-exports.addMojangAccount = async function(username, password) {
+exports.addMojangAccount = async function(username) {
     try {
-        const response = await MojangRestAPI.authenticate(username, password, ConfigManager.getClientToken())
-        console.log(response)
-        if(response.responseStatus === RestResponseStatus.SUCCESS) {
-
-            const session = response.data
-            if(session.selectedProfile != null){
-                const ret = ConfigManager.addMojangAuthAccount(session.selectedProfile.id, session.accessToken, username, session.selectedProfile.name)
-                if(ConfigManager.getClientToken() == null){
-                    ConfigManager.setClientToken(session.clientToken)
-                }
-                ConfigManager.save()
-                return ret
-            } else {
-                return Promise.reject(mojangErrorDisplayable(MojangErrorCode.ERROR_NOT_PAID))
-            }
-
-        } else {
-            return Promise.reject(mojangErrorDisplayable(response.mojangErrorCode))
-        }
+        let userId = null
+        // Gerar um UUID baseado no hash MD5 do nome de usuário
+        const hash = crypto.createHash('md5')
+        hash.update(username)
+        userId = hash.digest('hex')
         
+        const ret = ConfigManager.addMojangAuthAccount(userId, 'sry', username, username)
+        if (ConfigManager.getClientToken() == null) {
+            ConfigManager.setClientToken('sry')
+        }
+
+        ConfigManager.save()
+        return ret
+
     } catch (err){
         log.error(err)
         return Promise.reject(mojangErrorDisplayable(MojangErrorCode.UNKNOWN))
@@ -275,16 +272,9 @@ exports.addMicrosoftAccount = async function(authCode) {
  */
 exports.removeMojangAccount = async function(uuid){
     try {
-        const authAcc = ConfigManager.getAuthAccount(uuid)
-        const response = await MojangRestAPI.invalidate(authAcc.accessToken, ConfigManager.getClientToken())
-        if(response.responseStatus === RestResponseStatus.SUCCESS) {
-            ConfigManager.removeAuthAccount(uuid)
-            ConfigManager.save()
-            return Promise.resolve()
-        } else {
-            log.error('Error while removing account', response.error)
-            return Promise.reject(response.error)
-        }
+        ConfigManager.removeAuthAccount(uuid)
+        ConfigManager.save()
+        return Promise.resolve()
     } catch (err){
         log.error('Error while removing account', err)
         return Promise.reject(err)
