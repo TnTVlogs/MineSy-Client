@@ -318,7 +318,7 @@ body, button {
     cursor: pointer;
     position: relative;
     right: -20px;
-    transition: 0.5s ease;
+    transition: 0.15s ease;
     margin-top: 5%;
     margin-bottom: -5%;
 }
@@ -340,7 +340,7 @@ body, button {
     overflow: visible;
     transform: rotate(90deg);
     margin-left: 20px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     width: 20px;
     height: 20px;
 }
@@ -384,7 +384,7 @@ body, button {
     align-items: center;
     height: 100%;
     width: 100%;
-    transition: filter 0.25s ease;
+    transition: filter 0.15s ease;
     background: rgba(0, 0, 0, 0.50);
 }
 
@@ -401,7 +401,7 @@ body, button {
     border: none;
     outline: none;
     cursor: pointer;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #loginCancelButton:hover #loginCancelIcon,
 #loginCancelButton:hover #loginCancelText,
@@ -442,12 +442,12 @@ body, button {
     line-height: 30px;
     margin: 0 auto;
     margin-bottom: 5px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 /* Text for the login cancel button. */
 #loginCancelText {
     font-size: 15px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 
 /* Login content wrapper. */
@@ -473,7 +473,7 @@ body, button {
     color: #848484;
     font-weight: bold;
     text-decoration: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #loginForm a:hover,
 #loginForm a:focus {
@@ -531,7 +531,7 @@ body, button {
     position: absolute;
     top: 7px;
     opacity: 0;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 
 .shake {
@@ -605,7 +605,7 @@ body, button {
 /* Remember option text. */
 #loginRememberText {
     padding-right: 10px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 
 /* Login button styles. */
@@ -619,7 +619,7 @@ body, button {
     cursor: pointer;
     position: relative;
     right: -20px;
-    transition: 0.5s ease;
+    transition: 0.15s ease;
 }
 #loginButton:disabled {
     color: rgba(255, 255, 255, 0.75);
@@ -642,7 +642,7 @@ body, button {
     overflow: visible;
     transform: rotate(90deg);
     margin-left: 20px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     width: 20px;
     height: 20px;
 }
@@ -822,7 +822,7 @@ body, button {
     border: 1px solid #848484;
     border-radius: 1px;
     background: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 /* On hover and focus, add a grey border color. */
 #checkmarkContainer:hover input ~ *,
@@ -886,7 +886,7 @@ body, button {
     align-items: center;
     height: 100%;
     width: 100%;
-    transition: filter 0.25s ease;
+    transition: filter 0.15s ease;
     background: rgba(0, 0, 0, 0.50);
 }
 
@@ -965,7 +965,7 @@ body, button {
     align-items: center;
     height: 100%;
     width: 100%;
-    transition: filter 0.25s ease;
+    transition: filter 0.15s ease;
     background: rgba(0, 0, 0, 0.50);
 }
 
@@ -1001,7 +1001,7 @@ body, button {
     padding: 0px 25px;
     cursor: pointer;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     display: flex;
     align-items: center;
     column-gap: 5px;
@@ -1026,7 +1026,7 @@ body, button {
     color: lightgrey;
     cursor: pointer;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #loginOptionCancelButton:hover,
 #loginOptionCancelButton:focus {
@@ -1054,7 +1054,7 @@ body, button {
     height: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.50);
-    transition: background-color 0.25s cubic-bezier(.02, .01, .47, 1);
+    transition: background-color 0.15s cubic-bezier(.02, .01, .47, 1);
 }
 
 /* Drop shadow displayed when content is scrolled out of view. */
@@ -1065,7 +1065,7 @@ body, button {
     height: 5px;
     position: absolute;
     opacity: 0;
-    transition: opacity 0.25s ease;
+    transition: opacity 0.15s ease;
 }
 #settingsContainer[scrolled]:before {
     opacity: 1;
@@ -1122,7 +1122,7 @@ body, button {
     color: grey;
     cursor: pointer;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 .settingsNavItem:hover,
 .settingsNavItem:focus {
@@ -1165,7 +1165,7 @@ body, button {
     color: white;
     cursor: pointer;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #settingsNavDone:hover,
 #settingsNavDone:focus {
@@ -1262,7 +1262,7 @@ body, button {
     font-size: 12px;
     border-radius: 3px;
     font-family: 'Avenir Medium';
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     cursor: pointer;
     outline: none;
 }
@@ -1294,7 +1294,7 @@ body, button {
     border-radius: 3px;
     border: 1px solid rgba(126, 126, 126, 0.57);
     font-family: 'Avenir Book';
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #settingsContainer input[type=number]:focus,
 #settingsContainer input[type=text]:focus {
@@ -1356,7 +1356,7 @@ body, button {
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.35);
-    transition: .4s;
+    transition: .24s;
     border-radius: 50px;
     border: 1px solid rgba(126, 126, 126, 0.57);
 }
@@ -1370,7 +1370,7 @@ body, button {
     background-color: white;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
     border-radius: 50px;
-    transition: .4s;
+    transition: .24s;
 }
 input:checked + .toggleSwitchSlider {
     background-color: rgb(31, 140, 11);
@@ -1396,7 +1396,7 @@ input:checked + .toggleSwitchSlider:before {
     width: 50%;
     height: 5px;
     border-radius: 3px 0px 0px 3px;
-    transition: background 0.25s ease;
+    transition: background 0.15s ease;
 }
 .rangeSliderTrack {
     position: absolute;
@@ -1439,7 +1439,7 @@ input:checked + .toggleSwitchSlider:before {
     background: rgba(126, 126, 126, 0.57);
     border-radius: 3px 0px 0px 3px;
     padding: 5px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 .settingsFileSelSVG {
     width: 20px;
@@ -1464,7 +1464,7 @@ input:checked + .toggleSwitchSlider:before {
     padding: 0px 5px;
     cursor: pointer;
     background: rgba(126, 126, 126, 0.57);
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     white-space: nowrap;
     outline: none;
 }
@@ -1522,7 +1522,7 @@ input:checked + .toggleSwitchSlider:before {
     color: white;
     cursor: pointer;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 .settingsAddAuthAccount:hover,
 .settingsAddAuthAccount:focus {
@@ -1617,7 +1617,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     font-family: 'Avenir Medium';
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 .settingsAuthAccountSelect:hover:not([selected]),
 .settingsAuthAccountSelect:focus:not([selected]) {
@@ -1641,7 +1641,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 12px;
     border-radius: 3px;
     font-family: 'Avenir Medium';
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     cursor: pointer;
     outline: none;
 }
@@ -1736,7 +1736,7 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: opacity 0.25s ease;
+    transition: opacity 0.15s ease;
 }
 
 /* Wrapper container for the left side of a mod element. */
@@ -1752,7 +1752,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 50%;
     background-color: #c32625;
     margin-right: 15px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 
 /* Mod details container. */
@@ -1811,7 +1811,7 @@ input:checked + .toggleSwitchSlider:before {
     padding: 0px 50px;
     cursor: pointer;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     margin-bottom: 10px;
 }
 #settingsDropinFileSystemButton:hover,
@@ -1837,7 +1837,7 @@ input:checked + .toggleSwitchSlider:before {
     font-weight: bold;
     cursor: pointer;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 .settingsDropinRemoveButton:hover,
 .settingsDropinRemoveButton:focus {
@@ -1869,7 +1869,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 3px;
     cursor: pointer;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     font-size: 14px;
     padding: 6px 11px;
     margin-right: 5px;
@@ -1975,7 +1975,7 @@ input:checked + .toggleSwitchSlider:before {
 #settingsTabJava a,
 .settingsChangelogText a {
     color: rgba(202, 202, 202, 0.75);
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     outline: none;
 }
 #settingsTabJava a:hover,
@@ -2219,7 +2219,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 10px;
     color: grey;
     padding: 0px 5px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     outline: none;
     text-decoration: none;
 }
@@ -2425,7 +2425,7 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     outline: none;
     text-align: left;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #settingsUpdateActionButton:hover,
 #settingsUpdateActionButton:focus {
@@ -2449,14 +2449,14 @@ input:checked + .toggleSwitchSlider:before {
 #landingContainer {
     height: 100%;
     position: relative;
-    transition: background 2s ease;
+    transition: background 1s ease;
     overflow-y: hidden;
 }
 
 /* Upper content container. */
 #landingContainer > #upper {
     position: relative;
-    transition: top 2s ease;
+    transition: top 1s ease;
     top: 0px;
     height: 77%;
     display: flex;
@@ -2486,7 +2486,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 #landingContainer > #lower > #left {
     position: relative;
-    transition: top 2s ease;
+    transition: top 1s ease;
     top: 0px;
     height: 100%;
     width: 33%;
@@ -2502,7 +2502,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 #landingContainer > #lower > #center {
     position: relative;
-    transition: top 2s ease;
+    transition: top 1s ease;
     top: 0px;
     height: 100%;
     width: 34%;
@@ -2512,12 +2512,12 @@ input:checked + .toggleSwitchSlider:before {
 #landingContainer > #lower > #center #content {
     position: relative;
     z-index: 500;
-    transition: top 2s ease;
+    transition: top 1s ease;
     top: 10px;
 }
 #landingContainer > #lower > #right {
     position: relative;
-    transition: top 2s ease;
+    transition: top 1s ease;
     top: 0px;
     height: 100%;
     width: 33%;
@@ -2536,7 +2536,7 @@ input:checked + .toggleSwitchSlider:before {
     top: 100%;
     height: 100%;
     width: 100%;
-    transition: top 2s ease;
+    transition: top 1s ease;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -2559,7 +2559,7 @@ input:checked + .toggleSwitchSlider:before {
     height: 5px;
     position: absolute;
     opacity: 0;
-    transition: opacity 0.25s ease;
+    transition: opacity 0.15s ease;
 }
 #newsContent[scrolled]:before {
     opacity: 1;
@@ -2596,7 +2596,7 @@ input:checked + .toggleSwitchSlider:before {
     font-family: 'Avenir Medium';
     color: white;
     text-decoration: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     outline: none;
     text-align: right;
 }
@@ -2651,7 +2651,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 10px;
     color: #ffffff;
     text-decoration: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     outline: none;
     text-align: right;
 }
@@ -2685,7 +2685,7 @@ input:checked + .toggleSwitchSlider:before {
 }
 #newsArticleContentScrollable a {
     color: rgba(202, 202, 202, 0.75);
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     outline: none;
 }
 #newsArticleContentScrollable a:hover,
@@ -2711,7 +2711,7 @@ input:checked + .toggleSwitchSlider:before {
     outline: none;
     cursor: pointer;
     font-size: 16px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     width: 100%;
     border-bottom: 1px solid white;
     padding-bottom: 15px;
@@ -2832,7 +2832,7 @@ input:checked + .toggleSwitchSlider:before {
     background: none;
     border: none;
     outline: none;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #newsErrorRetry:focus,
 #newsErrorRetry:hover {
@@ -2912,7 +2912,7 @@ input:checked + .toggleSwitchSlider:before {
     left: -17.5px;
     font-family: 'Avenir Medium';
     font-size: 12px;
-    transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
 }
 #updateAvailableTooltip::after {
     content: " ";
@@ -2992,7 +2992,7 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     font-weight: bold;
     letter-spacing: 2px;
     background-color: rgba(0, 0, 0, 0.35);
@@ -3061,7 +3061,7 @@ input:checked + .toggleSwitchSlider:before {
 .mediaSVG {
     fill: #ffffff;
     height: 12px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     cursor: pointer;
     height: 12px;
     width: 25px;
@@ -3116,7 +3116,7 @@ input:checked + .toggleSwitchSlider:before {
     right: 130%;
     font-size: 12px;
     line-height: 20px;
-    transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
 }
 #settingsTooltip::after {
     content: " ";
@@ -3244,7 +3244,7 @@ input:checked + .toggleSwitchSlider:before {
     z-index: 1;
     font-family: 'Avenir Medium';
     font-size: 12px;
-    transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
     bottom: calc(100% + 15px);
     transform: translateX(-50%);
     margin-left: 50%;
@@ -3367,7 +3367,7 @@ input:checked + .toggleSwitchSlider:before {
 #newsButtonSVG {
     height: 11px;
     margin-left: -2px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 
 /* Span which contains the news button text. */
@@ -3379,7 +3379,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 11px;
     line-height: 30px;
     display: flex;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 
 /* * *
@@ -3403,7 +3403,7 @@ input:checked + .toggleSwitchSlider:before {
     text-shadow: 0px 0px 0px #bebcbb;
     font-size: 20px;
     padding: 0px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     outline: none;
 }
 #launch_button:hover,
@@ -3458,7 +3458,7 @@ input:checked + .toggleSwitchSlider:before {
     cursor: pointer;
     line-height: 24px;
     padding: 0px;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #server_selection_button:hover,
 #server_selection_button:focus {
@@ -3532,7 +3532,7 @@ input:checked + .toggleSwitchSlider:before {
 #overlayContent a,
 #overlayDismiss {
     color: rgba(202, 202, 202, 0.75);
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #overlayContent a:hover,
 #overlayContent a:focus,
@@ -3588,7 +3588,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 2px;
     padding: 0px 8.1px;
     cursor: pointer;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
 }
 #overlayAcknowledge:hover,
 #overlayAcknowledge:focus {
@@ -3683,7 +3683,7 @@ input:checked + .toggleSwitchSlider:before {
     justify-content: flex-start;
     align-items: center;
     opacity: 0.6;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     cursor: pointer;
     position: relative;
     background: rgba(131, 131, 131, 0.25);
@@ -3708,7 +3708,7 @@ input:checked + .toggleSwitchSlider:before {
     justify-content: flex-start;
     align-items: center;
     opacity: 0.6;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     cursor: pointer;
     position: relative;
     background: rgba(0, 0, 0, 0.25);
@@ -3824,7 +3824,7 @@ input:checked + .toggleSwitchSlider:before {
     z-index: 1;
     left: 130%;
     font-size: 10px;
-    transition: visibility 0s linear 0.25s, opacity 0.25s ease;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
 }
 .serverListingStarTooltip::after {
     content: " ";
@@ -3863,7 +3863,7 @@ input:checked + .toggleSwitchSlider:before {
     border-radius: 2px;
     padding: 0px 8.1px;
     cursor: pointer;
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     min-height: 20.67px;
 }
 #serverSelectConfirm:hover,
@@ -3887,7 +3887,7 @@ input:checked + .toggleSwitchSlider:before {
     text-decoration: none;
     padding-top: 2.5px;
     color: rgba(202, 202, 202, 0.75);
-    transition: 0.25s ease;
+    transition: 0.15s ease;
     background: none;
     border: none;
     outline: none;

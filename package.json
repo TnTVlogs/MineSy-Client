@@ -1,13 +1,13 @@
 {
-  "name": "hellmclauncher",
+  "name": "minesyclient",
   "version": "1.0.0",
-  "productName": "HellMC Launcher",
-  "description": "Modded Minecraft Launcher",
+  "productName": "MineSy Client",
+  "description": "Modded Minecraft Client",
   "author": "TnTVlogs (https://github.com/TnTVlogs/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/TnTVlogs/HellMC",
+  "homepage": "https://github.com/TnTVlogs/MineSy-Client",
   "bugs": {
-    "url": "https://github.com/TnTVlogs/HellMC/issues"
+    "url": "https://github.com/TnTVlogs/MineSy-Client/issues"
   },
   "private": true,
   "main": "index.js",
@@ -47,6 +47,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TnTVlogs/HellMC.git"
+    "url": "git+https://github.com/TnTVlogs/MineSy-Client.git"
   }
 }

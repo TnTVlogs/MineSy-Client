@@ -328,7 +328,7 @@ function createMenu() {
 function getPlatformIcon(filename){
     let ext
     switch(process.platform) {
-        case 'win32':
+        case 'win':
             ext = 'ico'
             break
         case 'darwin':
