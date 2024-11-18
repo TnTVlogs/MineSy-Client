@@ -164,7 +164,7 @@ body, button {
 
 /* Darwin Frame Button Styles. */
 .frameButtonDarwin {
-    height: 12px;
+    height: 30px;
     width: 12px;
     border-radius: 50%;
     border: 0px;
@@ -2791,11 +2791,11 @@ input:checked + .toggleSwitchSlider:before {
 }
 #newsNavigationLeftSVG {
     transform: rotate(-90deg);
-    width: 15px;
+    width: 25px;
 }
 #newsNavigationRightSVG {
     transform: rotate(90deg);
-    width: 15px;
+    width: 25px;
 }
 
 /* News error (message) container. */
@@ -2855,12 +2855,9 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Logo image. */
 #image_seal {
-    height: 70px;
+    height: 120px;
     width: auto;
     position: relative;
-    border: 2px solid white;
-    box-sizing: border-box;
-    border-radius: 50%;
 }
 
 /* Logo container styles. */
@@ -3044,9 +3041,11 @@ input:checked + .toggleSwitchSlider:before {
 /* Container object which wraps an icon to ensure fluid transitions. */
 .mediaContainer {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    height: 27px;
+    height: 40px;
+    width: 35px;
 }
 
 /* Divider bar between the external and internal icons. */
@@ -3060,21 +3059,22 @@ input:checked + .toggleSwitchSlider:before {
 /* Social media icon shared styles. */
 .mediaSVG {
     fill: #ffffff;
-    height: 12px;
     transition: 0.15s ease;
     cursor: pointer;
-    height: 12px;
-    width: 25px;
+    height: 25px;
+    width: 30px;
 }
 .mediaSVG:hover,
 .mediaURL:focus .mediaSVG,
 .mediaSVG:active {
-    height: 20px;
+    height: 35px;
 }
 
 /* Social media URL shared styles. */
 .mediaURL {
     outline: none;
+    position: relative;
+    display: flex;
 }
 
 /* Internal media button shared styles. */
@@ -3086,6 +3086,13 @@ input:checked + .toggleSwitchSlider:before {
     align-items: center;
     outline: none;
 }
+#twitterSVG {
+    height: 20px;
+}
+
+#linkSVG {
+    height: 25px;
+}
 
 #settingsMediaContainer {
     position: relative;
@@ -3094,29 +3101,31 @@ input:checked + .toggleSwitchSlider:before {
 /* Settings icon colors. */
 #settingsSVG {
     stroke: #ffffff;
-    height: 15px;
+    height: 25px;
 }
 .mediaButton:hover #settingsSVG,
 .mediaButton:focus #settingsSVG,
 .mediaButton:active #settingsSVG {
-    height: 23px;
+    height: 35px;
 }
 
 /* Settings tooltip styles. */
 #settingsTooltip {
     visibility: hidden;
     opacity: 0;
-    width: 75px;
-    height: 20px;
-    background-color: rgba(0, 0, 0, 0.75);
+    width: 100px;
+    height: 30px;
+    background-color: #000000bf;
     text-align: center;
     border-radius: 4px;
     position: absolute;
     z-index: 1;
     right: 130%;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 30px;
+    font-weight: 600;
     transition: visibility 0s linear 0.15s, opacity 0.15s ease;
+    color: white;
 }
 #settingsTooltip::after {
     content: " ";
@@ -3136,10 +3145,214 @@ input:checked + .toggleSwitchSlider:before {
     transition-delay:0s;
 }
 
+/* Settings tooltip styles. */
+#urlTooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 80px;
+    height: 30px;
+    background-color: #000000bf;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    right: 130%;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
+    color: white;
+}
+#urlTooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+}
+
+.mediaURL:hover #urlTooltip,
+.mediaURL:focus #urlTooltip,
+.mediaURL:active #urlTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay:0s;
+}
+
+
+/* Settings tooltip styles. */
+#twitterTooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+    background-color: #000000bf;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    right: 130%;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
+    color: white;
+}
+#twitterTooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+}
+
+.mediaContainer:hover #twitterTooltip,
+.mediaContainer:focus #twitterTooltip,
+.mediaContainer:active #twitterTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay:0s;
+}
+
+
+/* Settings tooltip styles. */
+#instagramTooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    height: 30px;
+    background-color: #000000bf;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    right: 130%;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
+    color: white;
+}
+#instagramTooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+}
+
+.mediaURL:hover #instagramTooltip,
+.mediaURL:focus #instagramTooltip,
+.mediaURL:active #instagramTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay:0s;
+}
+
+
+/* Settings tooltip styles. */
+#youtubeTooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    height: 30px;
+    background-color: #000000bf;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    right: 130%;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
+    color: white;
+}
+#youtubeTooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+}
+
+.mediaURL:hover #youtubeTooltip,
+.mediaURL:focus #youtubeTooltip,
+.mediaURL:active #youtubeTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay:0s;
+}
+
+
+/* Settings tooltip styles. */
+#discordTooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 100px;
+    height: 30px;
+    background-color: #000000bf;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    right: 130%;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    transition: visibility 0s linear 0.15s, opacity 0.15s ease;
+    color: white;
+}
+#discordTooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.75);
+}
+
+.mediaURL:hover #discordTooltip,
+.mediaURL:focus #discordTooltip,
+.mediaURL:active #discordTooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay:0s;
+}
+
+#settingsSVG:hover,
+#settingsMediaButton:focus #settingsSVG {
+    height: 30px;
+}
+
+#linkSVG:hover,
+#linkURL:focus #linkSVG {
+    fill: #ddf21d;
+    height: 30px;
+}
+#linkSVG:active {
+    fill: #ddf21d;
+}
+
 /* Twitter icon colors. */
 #twitterSVG:hover,
 #twitterURL:focus #twitterSVG {
     fill: #1da1f2;
+    height: 35px;
 }
 #twitterSVG:active {
     fill: #1b8dd4;
@@ -3159,6 +3372,7 @@ input:checked + .toggleSwitchSlider:before {
 #youtubeSVG:hover,
 #youtubeURL:focus #youtubeSVG {
     fill: #f00;
+    height: 35px;
 }
 #youtubeSVG:active {
     fill: #ea0202;
@@ -3212,7 +3426,7 @@ input:checked + .toggleSwitchSlider:before {
     font-size: 8px;
     font-weight: 900;
     text-shadow: 0px 0px 20px #949494;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 /* Wrapper container for the mojang status bar. */
@@ -3235,7 +3449,7 @@ input:checked + .toggleSwitchSlider:before {
     position: absolute;
     visibility: hidden;
     opacity: 0;
-    width: 145px;
+    width: 200px;
     min-height: 150px;
     background-color: rgba(0, 0, 0, 0.75);
     color: #fff;
@@ -3365,7 +3579,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Arrow image which floats above the news button. */
 #newsButtonSVG {
-    height: 11px;
+    height: 15px;
     margin-left: -2px;
     transition: 0.15s ease;
 }
@@ -3789,8 +4003,8 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 12px;
-    height: 12px;
+    line-height: 30px;
+    height: 30px;
     border-radius: 2px;
     background: rgba(31, 140, 11, 0.8);
     padding: 0px 2px;
@@ -3800,7 +4014,7 @@ input:checked + .toggleSwitchSlider:before {
 .serverListingRevision {
     color: #969696;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 30px;
     padding: 0px 5px;
 }
 
@@ -3809,7 +4023,7 @@ input:checked + .toggleSwitchSlider:before {
     display: flex;
     align-items: center;
     cursor: pointer;
-    height: 12px;
+    height: 30px;
     position: relative;
 }
 /* Tooltip which displays when hovering over the star. */
