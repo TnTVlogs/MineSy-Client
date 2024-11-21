@@ -10,7 +10,7 @@ instagramTooltip = "@MineSyNetwork"
 twitterTooltip = "@MineSyNTW"
 serverStatus = "SERVIDOR"
 serverStatusPlaceholder = "OFFLINE"
-mojangStatus = "ESTADO DE MOJANG"
+mojangStatus = "MOJANG"
 mojangStatusTooltipTitle = "Servicios"
 mojangStatusNETitle = "No&nbsp;Esenciales"
 newsButton = "NOTICIAS"
@@ -22,6 +22,11 @@ newsErrorLoadSpan = "Verificando Noticias..."
 newsErrorFailedSpan = "Error al Cargar Noticias"
 newsErrorRetryButton = "Intentar de Nuevo"
 newsErrorNoneSpan = "No Hay Noticias"
+
+[js.landing.discord]
+loading = "Cargando..."
+joining = "Jugando en play.minesy.net"
+joined = "Explorando"
 
 [ejs.login]
 loginCancelText = "Cancelar"
@@ -133,6 +138,7 @@ launcherUpdatesHeaderDesc = "Descarga, instala y revisa las actualizaciones para
 checkForUpdates = "Buscar actualizaciones"
 whatsNew = "¿Qué hay de nuevo?"
 updateReleaseNotes = "Notas de lanzamiento de la actualización"
+
 [ejs.waiting]
 waitingText = "Esperando a Microsoft.."
 
@@ -144,6 +150,10 @@ login = "INICIAR SESIÓN"
 loggingIn = "INICIANDO SESIÓN"
 success = "ÉXITO"
 tryAgain = "Intentar de Nuevo"
+
+[js.index]
+microsoftLoginTitle = "Microsoft Login"
+microsoftLogoutTitle = "Microsoft Logout"
 
 [js.login.error]
 invalidValue = "* Tu nombre de usuario debe tener al menos 4 caracteres"
@@ -205,7 +215,7 @@ errorDuringFileDownloadTitle = "Error Durante la Descarga del Archivo"
 preparingToLaunch = "Preparando para lanzar.."
 launchingGame = "Iniciando juego.."
 launchWrapperNotDownloaded = "El archivo principal, LaunchWrapper, no se descargó correctamente. Como resultado, el juego no puede iniciarse. Para solucionar este problema, desactiva temporalmente tu software antivirus y vuelve a iniciar el juego. Si tienes tiempo, por favor <a href=\"https://github.com/dscalzi/HeliosLauncher/issues\">envía un problema</a> y háznoslo saber qué software antivirus usas. Nos pondremos en contacto con ellos e intentaremos solucionar las cosas."
-doneEnjoyServer = "Listo. ¡Disfruta de la Isla :)!"
+doneEnjoyServer = "Listo. ¡Disfruta del juego!"
 checkConsoleForDetails = "Consulta nuestro discord para obtener más detalles."
 
 [js.landing.news]
@@ -277,6 +287,11 @@ fatalErrorTitle = "Error Fatal: No se Pudo Cargar el Índice de Distribución"
 fatalErrorMessage = "No se pudo establecer una conexión con nuestros servidores para descargar el índice de distribución. No había copias locales disponibles para cargar. <br><br>El índice de distribución es un archivo esencial que proporciona la última información del servidor. El cliente no puede iniciar sin él. Asegúrate de estar conectado a internet y vuelve a iniciar la aplicación."
 closeButton = "Cerrar"
 
+[js.settings.msftLogin]
+errorTitle = "Microsoft Login Failed"
+errorMessage = "We were unable to authenticate your Microsoft account. Please try again."
+okButton = "OK"
+
 [js.uibinder.validateAccount]
 failedMessageTitle = "Error al Actualizar el Inicio de Sesión"
 failedMessage = "No pudimos actualizar el inicio de sesión para <strong>{account}</strong>. Por favor, selecciona otra cuenta o inicia sesión nuevamente."
@@ -288,3 +303,45 @@ selectAnotherAccountButton = "Seleccionar Otra Cuenta"
 checkingForUpdateButton = "Buscando Actualizaciones..."
 installNowButton = "Instalar Ahora"
 checkForUpdatesButton = "Buscar Actualizaciones"
+
+[js.auth.microsoft.error]
+noProfileTitle = "Error During Login:<br>Profile Not Set Up"
+noProfileDesc = "Your Microsoft account does not yet have a Minecraft profile set up. If you have recently purchased the game or redeemed it through Xbox Game Pass, you have to set up your profile on <a href=\"https://minecraft.net/\">Minecraft.net</a>.<br><br>If you have not yet purchased the game, you can also do that on <a href=\"https://minecraft.net/\">Minecraft.net</a>."
+noXboxAccountTitle = "Error During Login:<br>No Xbox Account"
+noXboxAccountDesc = "Your Microsoft account has no Xbox account associated with it."
+xblBannedTitle = "Error During Login:<br>Xbox Live Unavailable"
+xblBannedDesc = "Your Microsoft account is from a country where Xbox Live is not available or banned."
+under18Title = "Error During Login:<br>Parental Approval Required"
+under18Desc = "Accounts for users under the age of 18 must be added to a Family by an adult."
+unknownTitle = "Unknown Error During Login"
+unknownDesc = "An unknown error has occurred. Please see the console for details."
+
+[js.auth.mojang.error]
+methodNotAllowedTitle = "Internal Error:<br>Method Not Allowed"
+methodNotAllowedDesc = "Method not allowed. Please report this error."
+notFoundTitle = "Internal Error:<br>Not Found"
+notFoundDesc = "The authentication endpoint was not found. Please report this issue."
+accountMigratedTitle = "Error During Login:<br>Account Migrated"
+accountMigratedDesc = "You've attempted to login with a migrated account. Try again using the account email as the username."
+invalidCredentialsTitle = "Error During Login:<br>Invalid Credentials"
+invalidCredentialsDesc = "The email or password you've entered is incorrect. Please try again."
+tooManyAttemptsTitle = "Error During Login:<br>Too Many Attempts"
+tooManyAttemptsDesc = "There have been too many login attempts with this account recently. Please try again later."
+invalidTokenTitle = "Error During Login:<br>Invalid Token"
+invalidTokenDesc = "The provided access token is invalid."
+tokenHasProfileTitle = "Error During Login:<br>Token Has Profile"
+tokenHasProfileDesc = "Access token already has a profile assigned. Selecting profiles is not implemented yet."
+credentialsMissingTitle = "Error During Login:<br>Credentials Missing"
+credentialsMissingDesc = "Username/password was not submitted or password is less than 3 characters."
+invalidSaltVersionTitle = "Error During Login:<br>Invalid Salt Version"
+invalidSaltVersionDesc = "Invalid salt version."
+unsupportedMediaTypeTitle = "Internal Error:<br>Unsupported Media Type"
+unsupportedMediaTypeDesc = "Unsupported media type. Please report this error."
+accountGoneTitle = "Error During Login:<br>Account Migrated"
+accountGoneDesc = "Account has been migrated to a Microsoft account. Please log in with Microsoft."
+unreachableTitle = "Error During Login:<br>Unreachable"
+unreachableDesc = "Unable to reach the authentication servers. Ensure that they are online and you are connected to the internet."
+gameNotPurchasedTitle = "Error During Login:<br>Game Not Purchased"
+gameNotPurchasedDesc = "The account you are trying to login with has not purchased a copy of Minecraft. You may purchase a copy on <a href=\"https://minecraft.net/\">Minecraft.net</a>"
+unknownErrorTitle = "Unknown Error During Login"
+unknownErrorDesc = "An unknown error has occurred. Please see the console for details."
