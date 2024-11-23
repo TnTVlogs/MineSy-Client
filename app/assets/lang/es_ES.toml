@@ -31,8 +31,8 @@ joined = "Explorando"
 [ejs.login]
 loginCancelText = "Cancelar"
 loginSubheader = "INICIO DE SESIÓN OFFLINE"
-loginEmailError = "* Tu nombre de usuario debe tener al menos 4 caracteres"
-loginEmailPlaceholder = "Tu Nombre de Usuario"
+loginEmailError = "Debe tener al menos 4 carácteres"
+loginEmailPlaceholder = "Tu nombre de usuario"
 loginPasswordError = "* Requerido"
 loginPasswordPlaceholder = "CONTRASEÑA"
 loginForgotPasswordLink = "https://minecraft.net/es-es/password/forgot/"
@@ -41,18 +41,18 @@ loginRememberMeText = "¿recordarme?"
 loginButtonText = "INICIAR SESIÓN"
 loginNeedAccountLink = "https://minecraft.net/es-es/store/minecraft-java-edition/"
 loginNeedAccountText = "¿Necesitas una cuenta?"
-loginPasswordDisclaimer1 = "Tu contraseña se envía directamente a Mojang y nunca se almacena."
+loginPasswordDisclaimer1 = "MineSy Client no almacena ningún tipo de datos."
 loginPasswordDisclaimer2 = "{appName} no está afiliado con Mojang AB, Minecraft o Microsoft."
 
 [js.discord]
-starting = "Iniciando el Cliente..."
-waiting = "Esperando al Cliente..."
+starting = "Iniciando el cliente..."
+waiting = "Esperando al cliente..."
 state = "Servidor: {shortId}"
 
 [ejs.loginOptions]
 loginOptionsTitle = "Opciones de inicio de sesión"
 loginWithMicrosoft = "Iniciar sesión con Microsoft"
-loginWithMojang = "Iniciar sesión Offline"
+loginWithMojang = "Iniciar sesión offline"
 cancelButton = "Cancelar"
 
 [ejs.overlay]
@@ -62,6 +62,10 @@ serverSelectCancel = "Cancelar"
 accountSelectHeader = "Seleccionar una cuenta"
 accountSelectConfirm = "Seleccionar"
 accountSelectCancel = "Cancelar"
+
+[settings]
+supportLink = "http://discord.minesy.net"
+sourceGithubLink = "https://github.com/TnTVlogs/MineSy-Client"
 
 [ejs.settings]
 navHeaderText = "Configuración"
@@ -78,23 +82,23 @@ tabAccountHeaderDesc = "Agregar nuevas cuentas o gestionar las existentes."
 microsoftAccount = "Microsoft"
 addMicrosoftAccount = "+ Agregar cuenta de Microsoft"
 mojangAccount = "Offline"
-addMojangAccount = "+ Agregar cuenta Offline"
+addMojangAccount = "+ Agregar cuenta offline"
 minecraftTabHeaderText = "Configuración de Minecraft"
 minecraftTabHeaderDesc = "Opciones relacionadas con el lanzamiento del juego."
-gameResolutionTitle = "Resolución del Juego"
+gameResolutionTitle = "Resolución del juego"
 launchFullscreenTitle = "Iniciar en pantalla completa."
 autoConnectTitle = "Conectar automáticamente al servidor al iniciar."
 launchDetachedTitle = "Iniciar proceso de juego separado del cliente."
 launchDetachedDesc = "Si el juego no está separado, cerrar el cliente también cerrará el juego."
-tabModsHeaderText = "Configuración de Mods"
+tabModsHeaderText = "Configuración de mods"
 tabModsHeaderDesc = "Activar o desactivar mods."
 switchServerButton = "Cambiar"
-requiredMods = "Mods Requeridos"
-optionalMods = "Mods Opcionales"
-dropinMods = "Mods Adicionales"
-addMods = "Agregar Mods"
+requiredMods = "Mods requeridos"
+optionalMods = "Mods opcionales"
+dropinMods = "Mods adicionales"
+addMods = "Agregar mods"
 dropInDesc = "Arrastra tus mods del cliente aquí, por favor usa solo archivos .jar."
-dropinRefreshNote = "(F5 para Refrescar)"
+dropinRefreshNote = "(F5 para recargar)"
 shaderpacks = "Packs de Shaders"
 shaderpackDesc = "Activar o desactivar shaders. Ten en cuenta que los shaders solo funcionarán sin problemas en configuraciones potentes. Puedes agregar packs personalizados aquí."
 selectShaderpack = "Seleccionar Pack de Shaders"
@@ -130,7 +134,7 @@ sourceGithub = "Fuente (GitHub)"
 support = "Soporte"
 devToolsConsole = "Consola de Herramientas de Desarrollador"
 releaseNotes = "Notas de lanzamiento"
-changelog = "Registro de Cambios"
+changelog = "Registro de cambios"
 noReleaseNotes = "No hay notas de lanzamiento"
 viewReleaseNotes = "Ver notas de lanzamiento en GitHub"
 launcherUpdatesHeaderText = "Actualizaciones del cliente"
@@ -149,18 +153,18 @@ continueButton = "CONTINUAR"
 login = "INICIAR SESIÓN"
 loggingIn = "INICIANDO SESIÓN"
 success = "ÉXITO"
-tryAgain = "Intentar de Nuevo"
+tryAgain = "Intentar de nuevo"
 
 [js.index]
-microsoftLoginTitle = "Microsoft Login"
-microsoftLogoutTitle = "Microsoft Logout"
+microsoftLoginTitle = "Microsoft login"
+microsoftLogoutTitle = "Microsoft logout"
 
 [js.login.error]
 invalidValue = "* Tu nombre de usuario debe tener al menos 4 caracteres"
 requiredValue = "* Requerido"
 
 [js.login.error.unknown]
-title = "Error desconocido durante el Inicio de Sesión"
+title = "Error desconocido durante el inicio de sesión"
 desc = "Se ha producido un error desconocido. Consulta nuestro discord para obtener más detalles."
 
 [js.landing.launch]
@@ -183,126 +187,121 @@ players = "JUGADORES"
 
 [js.landing.systemScan]
 checking = "Verificando información del sistema.."
-noCompatibleJava = "No se Encontró una Instalación de Java Compatible"
+noCompatibleJava = "No se encontró una instalación de Java compatible"
 installJavaMessage = "Para iniciar Minecraft, necesitas una instalación de Java de 64 bits {major}. ¿Te gustaría que instaláramos una copia?"
 installJava = "Instalar Java"
-installJavaManually = "Instalar Manualmente"
-javaDownloadPrepare = "Preparando Descarga de Java.."
-javaDownloadFailureTitle = "Error Durante la Descarga de Java"
+installJavaManually = "Instalar manualmente"
+javaDownloadPrepare = "Preparando descarga de Java.."
+javaDownloadFailureTitle = "Error durante la descarga de Java"
 javaDownloadFailureText = "Consulta nuestro discord para obtener más detalles."
-javaRequired = "Se Requiere Java para Iniciar"
-javaRequiredMessage = 'Se requiere una instalación válida de Java {major} x64 para iniciar. Consulta nuestra <a href="https://github.com/dscalzi/HeliosLauncher/wiki/Java-Management#manually-installing-a-valid-version-of-java">Guía de Gestión de Java</a> para obtener instrucciones sobre cómo instalar Java manualmente.'
+javaRequired = "Se requiere Java para iniciar"
+javaRequiredMessage = 'Se requiere una instalación válida de Java {major} x64 para iniciar. Consulta nuestra <a href="https://github.com/TnTVlogs/MineSy-Client/wiki/Java-Management#manually-installing-a-valid-version-of-java">Guía de Gestión de Java</a> para obtener instrucciones sobre cómo instalar Java manualmente.'
 javaRequiredDismiss = "Entiendo"
-javaRequiredCancel = "Volver Atrás"
+javaRequiredCancel = "Volver atrás"
 
 [js.landing.downloadJava]
 findJdkFailure = "Error al encontrar la distribución de OpenJDK."
 javaDownloadCorruptedError = "El JDK descargado tiene un hash incorrecto, el archivo puede estar corrupto."
 extractingJava = "Extrayendo Java"
-javaInstalled = "Java Instalado!"
+javaInstalled = "Java instalado!"
 
 [js.landing.dlAsync]
 loadingServerInfo = "Cargando información del servidor.."
-fatalError = "Error Fatal"
+fatalError = "Error fatal"
 unableToLoadDistributionIndex = "No se pudo cargar una copia del índice de distribución. Consulta nuestro discord para obtener más detalles."
-pleaseWait = "Por favor espera..."
-errorDuringLaunchTitle = "Error Durante el Lanzamiento"
+pleaseWait = "Espere..."
+errorDuringLaunchTitle = "Error durante el lanzamiento"
 seeConsoleForDetails = "Consulta nuestro discord para obtener más detalles."
-validatingFileIntegrity = "Validando integridad del archivo.."
-errorDuringFileVerificationTitle = "Error Durante la Verificación del Archivo"
-downloadingFiles = "Descargando archivos.."
-errorDuringFileDownloadTitle = "Error Durante la Descarga del Archivo"
-preparingToLaunch = "Preparando para lanzar.."
-launchingGame = "Iniciando juego.."
-launchWrapperNotDownloaded = "El archivo principal, LaunchWrapper, no se descargó correctamente. Como resultado, el juego no puede iniciarse. Para solucionar este problema, desactiva temporalmente tu software antivirus y vuelve a iniciar el juego. Si tienes tiempo, por favor <a href=\"https://github.com/dscalzi/HeliosLauncher/issues\">envía un problema</a> y háznoslo saber qué software antivirus usas. Nos pondremos en contacto con ellos e intentaremos solucionar las cosas."
+validatingFileIntegrity = "Validando..."
+errorDuringFileVerificationTitle = "Error durante la verificación del archivo"
+downloadingFiles = "Descargando..."
+errorDuringFileDownloadTitle = "Error durante la descarga del archivo"
+preparingToLaunch = "Preparando..."
+launchingGame = "Iniciando..."
+launchWrapperNotDownloaded = "El archivo principal, LaunchWrapper, no se descargó correctamente. Como resultado, el juego no puede iniciarse. Para solucionar este problema, desactiva temporalmente tu software antivirus y vuelve a iniciar el juego. Si tienes tiempo, por favor <a href=\"https://github.com/TnTVlogs/MineSy-Client/issues\">envía un problema</a> y háznoslo saber qué software antivirus usas. Nos pondremos en contacto con ellos e intentaremos solucionar las cosas."
 doneEnjoyServer = "Listo. ¡Disfruta del juego!"
 checkConsoleForDetails = "Consulta nuestro discord para obtener más detalles."
 
 [js.landing.news]
-checking = "Verificando Noticias"
+checking = "Verificando noticias"
 
 [js.settings.fileSelectors]
 executables = "Ejecutables"
-allFiles = "Todos los Archivos"
+allFiles = "Todos los archivos"
 
-[js.settings.mstfLogin]
-errorTitle = "Algo Salió Mal"
+[js.settings.msftLogin]
+errorTitle = "Algo salió mal"
 errorMessage = "La autenticación de Microsoft falló. Por favor, inténtalo de nuevo."
 okButton = "Aceptar"
 
-[js.settings.mstfLogout]
-errorTitle = "Algo Salió Mal"
+[js.settings.msftLogout]
+errorTitle = "Algo salió mal"
 errorMessage = "El cierre de sesión de Microsoft falló. Por favor, inténtalo de nuevo."
 okButton = "Aceptar"
 
 [js.settings.authAccountSelect]
-selectButton = "Seleccionar Cuenta"
-selectedButton = "Cuenta Seleccionada ✓"
+selectButton = "Seleccionar cuenta"
+selectedButton = "Cuenta seleccionada ✓"
 
 [js.settings.authAccountLogout]
-lastAccountWarningTitle = "Advertencia Esta es Tu Última Cuenta"
+lastAccountWarningTitle = "Advertencia esta es tu última cuenta"
 lastAccountWarningMessage = "Para usar el cliente debes estar conectado al menos a una cuenta. Deberás iniciar sesión nuevamente después. ¿Estás seguro de que deseas cerrar sesión?"
-confirmButton = "Estoy Seguro"
+confirmButton = "Estoy seguro"
 cancelButton = "Cancelar"
 
 [js.settings.authAccountPopulate]
-username = "Nombre de Usuario"
+username = "Nombre de usuario"
 uuid = "UUID"
-selectAccount = "Seleccionar Cuenta"
-selectedAccount = "Cuenta Seleccionada ✓"
-logout = "Cerrar Sesión"
+selectAccount = "Seleccionar cuenta"
+selectedAccount = "Cuenta seleccionada ✓"
+logout = "Cerrar sesión"
 
 [js.settings.dropinMods]
 removeButton = "Eliminar"
-deleteFailedTitle = "Error al Eliminar Mod Adicional {fullName}"
+deleteFailedTitle = "Error al eliminar mod adicional {fullName}"
 deleteFailedMessage = "Asegúrate de que el archivo no esté en uso e inténtalo de nuevo."
-failedToggleTitle = "Error al Alternar Uno o Más Mods Adicionales"
+failedToggleTitle = "Error al alternar uno o más mods adicionales"
 okButton = "Aceptar"
 
 [js.settings.serverListing]
-mainServer = "Servidor Principal"
+mainServer = "Servidor principal"
 
 [js.settings.java]
 selectedJava = "Seleccionado: Java {version} ({vendor})"
-invalidSelection = "Selección Inválida"
+invalidSelection = "Selección inválida"
 requiresJava = "Requiere Java {major} x64."
-availableOptions = "Opciones Disponibles para Java {major} (VM HotSpot)"
+availableOptions = "Opciones disponibles para Java {major} (VM HotSpot)"
 
 [js.settings.about]
 preReleaseTitle = "Pre-lanzamiento"
-stableReleaseTitle = "Versión Estable"
+stableReleaseTitle = "Versión estable"
 releaseNotesFailed = "Error al cargar las notas de lanzamiento."
 
 [js.settings.updates]
-newReleaseTitle = "Nueva Versión Disponible"
-newPreReleaseTitle = "Nuevo Pre-lanzamiento Disponible"
-downloadingButton = "Descargando.."
+newReleaseTitle = "Nueva versión disponible"
+newPreReleaseTitle = "Nuevo Pre-lanzamiento disponible"
+downloadingButton = "Descargando..."
 downloadButton = 'Descargar desde GitHub<span style="font-size: 10px;color: gray;text-shadow: none !important;">Cierra el cliente y ejecuta el dmg para actualizar.</span>'
-latestVersionTitle = "Estás Ejecutando la Última Versión"
-checkForUpdatesButton = "Buscar Actualizaciones"
-checkingForUpdatesButton = "Buscando Actualizaciones.."
+latestVersionTitle = "Estás ejecutando la última versión"
+checkForUpdatesButton = "Buscar actualizaciones"
+checkingForUpdatesButton = "Buscando actualizaciones..."
 
 [js.uibinder.startup]
-fatalErrorTitle = "Error Fatal: No se Pudo Cargar el Índice de Distribución"
-fatalErrorMessage = "No se pudo establecer una conexión con nuestros servidores para descargar el índice de distribución. No había copias locales disponibles para cargar. <br><br>El índice de distribución es un archivo esencial que proporciona la última información del servidor. El cliente no puede iniciar sin él. Asegúrate de estar conectado a internet y vuelve a iniciar la aplicación."
+fatalErrorTitle = "Error fatal: No se pudo cargar el índice de distribución"
+fatalErrorMessage = "No se pudo establecer una conexión con nuestros servidores para descargar el índice de distribución.<br><br>Asegúrate de estar conectado a internet y vuelve a iniciar la aplicación. Si crees que no es un problema de conexión, contáctanos en nuestro discord: discord.minesy.net"
 closeButton = "Cerrar"
-
-[js.settings.msftLogin]
-errorTitle = "Microsoft Login Failed"
-errorMessage = "We were unable to authenticate your Microsoft account. Please try again."
-okButton = "OK"
 
 [js.uibinder.validateAccount]
 failedMessageTitle = "Error al Actualizar el Inicio de Sesión"
 failedMessage = "No pudimos actualizar el inicio de sesión para <strong>{account}</strong>. Por favor, selecciona otra cuenta o inicia sesión nuevamente."
 failedMessageSelectAnotherAccount = "No pudimos actualizar el inicio de sesión para <strong>{account}</strong>. Por favor, inicia sesión nuevamente."
 loginButton = "Iniciar Sesión"
-selectAnotherAccountButton = "Seleccionar Otra Cuenta"
+selectAnotherAccountButton = "Seleccionar otra cuenta"
 
 [js.uicore.autoUpdate]
-checkingForUpdateButton = "Buscando Actualizaciones..."
-installNowButton = "Instalar Ahora"
-checkForUpdatesButton = "Buscar Actualizaciones"
+checkingForUpdateButton = "Buscando actualizaciones..."
+installNowButton = "Instalar ahora"
+checkForUpdatesButton = "Buscar actualizaciones"
 
 [js.auth.microsoft.error]
 noProfileTitle = "Error During Login:<br>Profile Not Set Up"
