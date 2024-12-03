@@ -4,10 +4,10 @@
 title = "MineSy Client"
 
 [ejs.landing]
-mediaGitHubURL = "https://github.com/TnTVlogs/MineSy-Client"
-mediaTwitterURL = "https://twitter.minesy.net"
-mediaInstagramURL = "https://instagram.minesy.net"
-mediaYouTubeURL = "https://youtube.minesy.net"
+mediaGitHubURL = "https://minesy.net"
+mediaTwitterURL = "https://minesy.net/twitter"
+mediaInstagramURL = "https://minesy.net/instagram"
+mediaYouTubeURL = "https://minesy.net/youtube"
 mediaDiscordURL = "https://discord.minesy.net"
 
 [ejs.settings]
