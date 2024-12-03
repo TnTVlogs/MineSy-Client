@@ -1,10 +1,10 @@
 {
   "name": "minesyclient",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "productName": "MineSy Client",
   "description": "MineSy Client (by MineSy Network)",
   "author": "TnTVlogs (https://github.com/TnTVlogs/)",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "homepage": "https://github.com/TnTVlogs/MineSy-Client",
   "bugs": {
     "url": "https://github.com/TnTVlogs/MineSy-Client/issues"
