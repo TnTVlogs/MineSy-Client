@@ -193,10 +193,3 @@ $(document).on('click', 'a[href^="http"]', function(event) {
     event.preventDefault()
     shell.openExternal(this.href)
 })
-
-document.addEventListener('keydown', function (e) {
-    if((e.key === 'I' || e.key === 'i') && e.ctrlKey && e.shiftKey){
-        let window = remote.getCurrentWindow()
-        window.toggleDevTools()
-    }
-})
